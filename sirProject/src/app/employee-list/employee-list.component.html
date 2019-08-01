@@ -1,0 +1,30 @@
+<div align="center">
+<h1>Employees List </h1>
+<h3>
+  Click on the table column headings to order
+</h3>
+<table >
+<tr>
+  <td (click)="sort('id')">id</td>
+  
+  <td (click)="sort('name')">name</td>
+
+  <td>Operation</td>
+
+</tr>
+<!-- using our orderBy pipe ,passing the column name and order as argument 
+  employees will be passed as first argumnet in pipe -->
+<tr *ngFor="let e of employees | orderBy:column:order">
+
+  <td>
+   {{e.id}}
+  </td>
+<td>
+{{e.name}}
+</td>
+<td>
+  <button (click)="delete(e.id)" type="button" >Delete</button>
+</td>
+
+  </tr>
+</table></div>

@@ -1,0 +1,18 @@
+<p>online-link works!</p>
+<table border="2">
+    <tr >
+        <th>Employee id</th>
+        <th>Employee email</th>
+        <th>Employee firstName</th>
+        <th>Employee LastName</th>
+        <th>Employee avatar</th>
+     </tr>
+    <tr *ngFor="let emp of onlineData"  >
+     <td> {{ emp.id }}</td>
+     <td> {{ emp.email }}</td>
+      <td>{{ emp.first_name }}</td>
+      <td>{{ emp.last_name }}</td>
+      
+      <td> {{ emp.avatar  }} </td>
+    </tr>
+</table>

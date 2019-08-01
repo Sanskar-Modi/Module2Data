@@ -1,0 +1,14 @@
+<br>
+
+<table border="2" cellspacing="5px">
+    <tr>
+        <th><a >Id</a></th>
+        <th><a >Name</a></th>
+        <th>operations</th>
+    </tr>
+    <tr *ngFor ="let loopData of myArr" >
+        <td>{{loopData.deptId}}</td>
+        <td>{{loopData.deptNum}}</td>
+        <td align="center" (click)="deleteRow(loopData.deptId)"><button>delete</button></td>
+    </tr>
+</table>

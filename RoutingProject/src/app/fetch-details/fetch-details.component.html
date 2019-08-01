@@ -1,0 +1,33 @@
+<br>
+<table border="2">
+            <tr >
+               
+                <th>Employee Id</th>
+                <th>Employee Name</th>
+                <th>Employee Designation</th>
+                <th>Employee Address</th>
+                <th >Employee Contact Number</th>
+                <th>Employee Gender</th>
+                <th>operation</th>
+             </tr>
+            <tr *ngFor="let emp of employee"  >
+             <td> {{ emp.eid }}</td>
+             <td> {{ emp.ename }}</td>
+              <td>{{ emp.edesignation }}</td>
+              <td>{{ emp.eadd }}</td>
+              <td >{{ emp.econtact}}</td>
+              <td> {{ emp.egender  }} </td>
+            
+              <td align="center" (click)="updateDataOpen()"><button>Update</button></td>
+              <div  *ngIf =!isUpdateOpenClick>
+                    <form [formGroup]="employeeForm"  (ngSubmit)="onSubmit()">
+                    <td><input type= "text" formControlName="{{emp.eid}}"   /></td>
+                    <td><input type="text" formControlName="econtact"  /></td>
+                    <td><input type="submit" value="update"></td>
+                </form>
+                  
+              </div>    
+            </tr>
+           
+</table>
+

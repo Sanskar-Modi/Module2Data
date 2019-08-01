@@ -1,0 +1,20 @@
+[{
+    "eid" : 123,
+    "ename" : "satish",
+    
+    "edesignation" : "associate",
+    "eadd" : "panvel",
+    "econtact" : ["8690","84864"],
+    "egender" : "male"
+    
+  },
+  {
+    "eid" : 17,
+    "ename" : "sats",
+    
+    "edesignation" : "associatasfae",
+    "eadd" : "chennai",
+    "econtact" : ["8623490","2342384864"],
+    "egender" : "female"
+  }
+] 

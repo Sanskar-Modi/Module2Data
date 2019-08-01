@@ -1,0 +1,13 @@
+<form #details="ngForm"  (ngSubmit)="add(details.value)">
+    <h3>
+        create employee
+    </h3>
+    <p>ID:<input type="text" name="id" ngModel></p>
+    <p>Name:<input type="text" name="name" ngModel></p>
+    <p>Designation:<input type="text" name="designation" ngModel></p>
+    <p>Address<input type="text" name="address" ngModel></p>
+    <p>contact:<input type="text" name="contact" ngModel></p>
+    <p>Gender:<input type="text" name="gender" ngModel></p>
+    <input type="submit" value="Add data">
+    <!-- <button type="submit">save</button> -->
+</form>

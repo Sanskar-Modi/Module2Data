@@ -1,0 +1,23 @@
+<p>employee-on-click works!</p>
+<button (click)="check()" >{{buttonValue}}</button>
+
+<div *ngIf = !isCollapsed>
+        <table border="2">
+                <tr >
+                    <th>Employee Name</th>
+                    <th>Employee Id</th>
+                    <th>Employee Designation</th>
+                    <th>Employee Address</th>
+                    <th colspan="2">Employee Contact Number</th>
+                    <th>Employee Gender</th>
+                 </tr>
+                <tr *ngFor="let emp of employeeObj"  >
+                 <td> {{ emp.ename | newPipe:emp.egender }}</td>
+                 <td> {{ emp.eid }}</td>
+                  <td>{{ emp.edesignation }}</td>
+                  <td>{{ emp.eadd }}</td>
+                  <td  *ngFor="let contact of emp.econtact">{{ contact}}</td>
+                  <td> {{ emp.egender | newPipe:emp.egender }} </td>
+                </tr>
+            </table>
+</div> 

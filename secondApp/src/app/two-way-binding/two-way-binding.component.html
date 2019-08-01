@@ -1,0 +1,37 @@
+<p>{{hello}}</p>
+<div>
+<input type="text" [(ngModel)] = "hello">
+<table border="2">
+        <tr >
+            <th>Employee Name</th>
+            <th>Employee Id</th>
+            <th>Employee Designation</th>
+            <th>Employee Address</th>
+            <th colspan="2">Employee Contact Number</th>
+         </tr>
+        <tr *ngFor="let emp of employeeObj" >
+         <td> <input type="text" [(ngModel)] = "emp.ename" ></td>
+         <td><input type="text" [(ngModel)] = "emp.eid"></td>
+          <td><input type="text" [(ngModel)] = "emp.edesignation"></td>
+          <td><input type="text" [(ngModel)] = "emp.eadd"></td>
+          <td  *ngFor="let contact of emp.econtact"><input type="text" [(ngModel)] = "contact"></td>
+        </tr>
+    </table>
+<table border="2">
+        <tr >
+            <th>Employee Name</th>
+            <th>Employee Id</th>
+            <th>Employee Designation</th>
+            <th>Employee Address</th>
+            <th colspan="2">Employee Contact Number</th>
+         </tr>
+        <tr *ngFor="let emp of employeeObj" >
+         <td> {{ emp.ename | uppercase  }}</td>
+         <td> {{ emp.eid }}</td>
+          <td>{{ emp.edesignation }}</td>
+          <td>{{ emp.eadd }}</td>
+          <td  *ngFor="let contact of emp.econtact">{{ contact}}</td>
+        </tr>
+    </table>
+<p>{{hello}}</p>
+</div>

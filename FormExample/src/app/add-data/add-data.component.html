@@ -1,0 +1,9 @@
+<p>add-data works!</p>
+<form [formGroup]="employeeForm"  (ngSubmit)="onSubmit()">
+    <h3>
+        create employee
+    </h3>
+    <p>Name:<input type="text" formControlName="fullname"></p>
+    <p>Email:<input type="text" formControlName="email"></p>
+    <button type="submit">save</button>
+</form>
