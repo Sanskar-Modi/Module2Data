@@ -1,0 +1,14 @@
+<table border="4" cellspacing="0" cellpadding="5">
+    <tr>
+        <th><button (click)="id1()">ID</button></th>
+        <th><a (click)="name1()">Name</a></th>
+        <th>operation</th>
+    </tr>
+
+    <tr *ngFor='let w of dept'>
+        <td>{{w.dptId}}</td>
+        <td>{{w.dptName}}</td>
+        <td><button (click)="delete(w.dptId)">delete</button></td>
+    </tr>
+</table>
+

@@ -1,0 +1,26 @@
+[
+
+    {
+    "dptId" : 107,
+    "dptName" : "Human Resource"
+    
+    },
+    
+    {
+    "dptId" : 171,
+    "dptName" : "Software Development"
+    
+    },
+    {
+    "dptId" : 162,
+    "dptName" : "Administration"
+    
+    },
+    
+    {
+    "dptId" : 183,
+    "dptName" : "Management"
+    
+    }
+    
+    ]
